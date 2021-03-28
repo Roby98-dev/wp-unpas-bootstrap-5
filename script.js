@@ -15,6 +15,8 @@ form.addEventListener("submit", e => {
     .then(response => {
       btnKirim.classList.toggle(".d-none");
       btnLoading.classList.toggle(".d-none");
+      myAlert.classList.toggle(".d-none");
+      form.reset();
       console.log("Success!", response);
     })
     .catch(error => console.error("Error!", error.message));
