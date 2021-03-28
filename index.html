@@ -85,18 +85,18 @@
       <h2 class="text-uppercase">Contact Us</h2>
       <div class="row justify-content-center mt-5">
         <div class="col-lg-5 col-md-12 col-sm-12">
-          <form>
+          <form name="submit-to-google-sheet">
             <div class="mb-3">
               <label for="fullName" class="form-label">Full Name</label>
-              <input type="text" class="form-control" id="fullName" aria-describedby="emailHelp" placeholder="Input Your Full Name Here">
+              <input type="text" class="form-control" id="fullName" aria-describedby="emailHelp" placeholder="Input Your Full Name Here" name="name">
             </div>
             <div class="mb-3">
               <label for="email1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp" placeholder="Input Your Email Here">
+              <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp" placeholder="Input Your Email Here" name="email">
             </div>
             <div class="mb-3">
               <label for="message1" class="form-label">Message</label>
-              <textarea class="form-control" id="message" rows="3" placeholder="Input Your Message Here"></textarea>
+              <textarea class="form-control" id="message" rows="3" placeholder="Input Your Message Here" name="messages"></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
@@ -120,6 +120,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
   </script>
+  <script src="script.js"></script>
 </body>
 
 </html>
