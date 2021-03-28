@@ -85,6 +85,10 @@
       <h2 class="text-uppercase">Contact Us</h2>
       <div class="row justify-content-center mt-5">
         <div class="col-lg-5 col-md-12 col-sm-12">
+          <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+            <strong>Success!</strong> We got your messages.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
           <form name="submit-to-google-sheet">
             <div class="mb-3">
               <label for="fullName" class="form-label">Full Name</label>
@@ -98,7 +102,11 @@
               <label for="message1" class="form-label">Message</label>
               <textarea class="form-control" id="message" rows="3" placeholder="Input Your Message Here" name="messages"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary btn-kirim">Submit</button>
+            <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+              <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+              Loading...
+            </button>
           </form>
         </div>
       </div>
