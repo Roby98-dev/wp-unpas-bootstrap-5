@@ -12,6 +12,10 @@ form.addEventListener("submit", e => {
   btnLoading.classList.toggle(".d-none");
 
   fetch(scriptURL, { method: "POST", body: new FormData(form) })
-    .then(response => console.log("Success!", response))
+    .then(response => {
+      btnKirim.classList.toggle(".d-none");
+      btnLoading.classList.toggle(".d-none");
+      console.log("Success!", response);
+    })
     .catch(error => console.error("Error!", error.message));
 });
